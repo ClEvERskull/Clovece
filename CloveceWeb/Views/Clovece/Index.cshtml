@@ -1,0 +1,16 @@
+﻿@using CloveceWeb.Models;
+@model CloveceModel
+
+@{
+    ViewData["Title"] = "Clovece";
+}
+
+<h1>Clovece</h1>
+
+
+<form action="/Clovece/ZadajPocet">
+    <label for="pocet">Zadaj počet hráčov(2-4):</label><br>
+    <input type="number"  min="2" max="4" step="1" id="pocet" name="pocet"><br>
+    <input type="submit" value="Submit">
+</form>
+
